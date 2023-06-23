@@ -697,7 +697,7 @@ header .follow a:hover{
     
 }
 
-
-
-
+.dropdown .close {
+    display: none;
+}
 

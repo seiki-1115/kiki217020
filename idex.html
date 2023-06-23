@@ -7,10 +7,9 @@
 <title>SEIKI Portfolio</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 <link rel="stylesheet"href="css/style.css">
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
 
 </head>
@@ -34,7 +33,7 @@
         <a href="#experience">Experience｜活動經驗</a>
         <a href="#service">service｜服務內容</a>
         <div class="dropdown">
-        <a href="#graphicdesign"> Graphic design｜平面 ▾ </a>
+        <a href="#graphicdesign" class="dropdown-trigger"> Graphic design｜平面 ▾ </a>
         <ul class="sub-menu">
            <a href="#ponkandaily"> 椪 柑 爆 報 </a></li>
            <a href="#logodesign"> 標 誌 設 計 </a></li>
@@ -47,7 +46,7 @@
         
         
         <div class="dropdown">
-        <a href="#multi-media design">Multi-media design｜多媒體▾</a>
+        <a href="#multi-media design" class="dropdown-trigger">Multi-media design｜多媒體▾</a>
         <ul class="sub-menu">
            <a href="#ardesign"> A R 書籍設計</a></li>
            <a href="#app">A P P 介面設計</a></li>
@@ -72,7 +71,11 @@
 </header>
 <!--header section starts-->
 <script src="js/script.js"></script>
-
+<script>
+    $(".dropdown-trigger").on("click",function(e){
+        $(this).parent().find(".sub-menu").toggleClass("close");
+    })
+</script>
     
 </body>
 </html>
