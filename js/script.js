@@ -40,9 +40,3 @@ document.querySelectorAll('a').forEach(links =>{
     }
 
 });
-$(".dropdown-trigger").on("click",new function(e){
-    console.log("Click");
-    
-    
-})
-
